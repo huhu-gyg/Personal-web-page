@@ -1,0 +1,46 @@
+/* Collums */
+
+    [class*="col-"] {
+        float: left;
+        padding: 15px; /* помнить об этом паддинге! ! ! */
+        border: 1px solid red;
+    }
+
+    .grid-container::after {
+        content: "";
+        clear: both;
+        display: table;        
+    }
+
+    /*проверить необходимость этого кода*/
+
+/* Global */
+
+
+/*     img {
+        max-width: 100%;
+        height: auto;
+    }
+ */
+    .grid-container {
+/*         width: 90%; */
+        overflow: hidden; /* разобраться потом с этим */
+        margin: auto;
+    }
+
+    .grid-container2 {
+/*         width: 100%; */
+        overflow: hidden;
+        margin: auto;
+    }
+
+/* Header */
+        #authorname {
+        }
+
+        #header-links li {
+        }
+
+        #header-search {
+            float: right;
+            }

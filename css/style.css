@@ -1,0 +1,226 @@
+
+/* aside -- coming soon - новый проект, над которым работаю + что изучаю ; contact inform; при телефоне - profile card и свайпом к основному сайту */
+/* fullscreen navigation - тоже интересно */
+/* equal height - для четырех блоков */
+
+
+/* паддинг отталкивает название, а не иконку */
+
+/* Global */ 
+
+        * {
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+        }
+
+        #body {
+            width: 97%;
+            margin: auto;
+            background-color: #0063B1;
+        }
+
+        .section-title {
+            color: #0F0B0B;
+            text-align: center;
+            padding: 5px 0 5px 0;
+        }
+
+        .info-links ul li:first-child {
+            font-weight: bold;
+        }
+
+/* Header */
+
+        #my-header {
+            min-height: 70px;
+            color: #FFFFFF;
+            background-color: #0063B1;
+        }
+
+        #authorname {
+            margin: 0 0 10px 5px;
+            font-size: 50px;
+        }
+
+        #header-links {
+            margin: 0;
+            padding: 0;
+        }
+
+        #header-links li {
+            margin: 20px 0 0 0;
+            font-size: 22px;
+            list-style-type: none;
+            padding: 0 30px 0 30px;
+        }
+
+        #header-links li a {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
+        #header-search {
+            margin: 15px 0 0 0;
+            padding: 5px 5px 5px 5px;
+            transition: width 0.4s ease-in-out;
+                background-image: url('../img/searchicon.png');
+                background-size: 30px 30px;
+                background-position: right center; 
+                background-repeat: no-repeat;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+            }
+
+/* Contact bar */
+
+        #social-bar {
+            display: block;
+            list-style: none;
+            position: fixed;
+            right: 0;
+        }
+
+                #social-bar li {
+                    position: fixed;
+                    right: -85px;
+                    transition: 0.3s;
+                    width: 120px;
+                        border-radius: 5px 0 0 5px;
+                        padding: 15px 15px 15px 35px;
+                }
+
+                #social-bar li a {
+                    text-decoration: none;
+                    font-size: 20px;
+                    color: white;
+                    position: relative;
+                }
+
+                #social-bar li:hover {
+                    right: -1px;
+                }
+
+                    .fa {
+                        height: 30px;
+                        width: 30px;
+                        padding: 7px;
+                        font-size: 15px;
+                        text-align: center;
+                        text-decoration: none;
+                        border-radius: 50%;
+                            position: absolute;
+                            left: 1px;
+                            top: 12px;
+                    }
+                    
+                    .fa:hover {
+                        opacity: 0.7;
+                    }
+                    
+                            .fa-facebook {
+                                background: #3B5998;
+                                color: white;
+                            }
+
+                            .fa-google {
+                                background: #dd4b39;
+                                color: white;
+                            }
+                            
+                            .fa-skype {
+                                background: #00aff0;
+                                color: white;
+                            }
+                            
+                            .fa-vimeo {
+                                background: #984888;
+                                color: white;
+                            }
+
+        #social-el-1 {
+            top: 80px;
+                background-color: #BDC7F1;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+        }
+        #social-el-2 {
+            top: 138px;
+                background-color: #BDC7F1;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+        }
+        #social-el-3 {
+            top: 196px;
+                background-color: #BDC7F1;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+        }
+        #social-el-4 {
+            top: 254px;
+                background-color: #BDC7F1;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+        }
+
+/* Section 1 - my-slides */
+
+        #section-1 {
+            background-image: url('../img/responsive.png');
+            background-size: contain;
+            background-repeat: repeat left;
+        }
+
+        #section-1 {
+            min-height: 400px;
+            background-color: #7CA17C;
+        }
+
+        /* Section 2  - my-tools*/
+        #section-2 {
+            background-color: #FFFFFF;
+        }
+
+        .my-boxes {
+            padding: 50px;
+            text-align: center;
+            border: 1px solid #0063B1;
+        }
+
+/* Section 3 - contacts*/
+
+        #section-3 {
+            min-height: 200px;
+            background-color: #CB8686;
+        }
+
+        .info-links {
+            margin: 0 0 0 20px;
+            width: 30%;
+            float: left;
+        }
+
+/* Footer */
+        #my-footer {
+            height: 70px;
+            background-color: #0063B1;
+            text-align: center;
+        }
+
+        #footer-info {
+            padding-top: 25px;
+        }
+
+
+/* Черновик */
+
+/* 
+#social-el-1 {
+    top: 80px;
+        background-color: #BDC7F1;
+                    background-image: url('../img/searchicon.png');
+            background-size: 30px 30px;
+            background-position: left center; 
+            background-repeat: no-repeat;
+        border: 2px solid #ccc;
+        border-radius: 4px; */
