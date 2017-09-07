@@ -3,7 +3,7 @@
     [class*="col-"] {
         float: left;
         padding: 15px; /* помнить об этом паддинге! ! ! */
-        border: 1px solid red;
+ /*        border: 1px solid red; */
     }
 
     .grid-container::after {
@@ -26,6 +26,7 @@
 /*         width: 90%; */
         overflow: hidden; /* разобраться потом с этим */
         margin: auto;
+        position: relative; /* а вот уже нужнее */
     }
 
     .grid-container2 {
@@ -33,14 +34,3 @@
         overflow: hidden;
         margin: auto;
     }
-
-/* Header */
-        #authorname {
-        }
-
-        #header-links li {
-        }
-
-        #header-search {
-            float: right;
-            }

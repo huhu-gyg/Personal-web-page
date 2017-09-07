@@ -43,33 +43,33 @@
             font-size: 50px;
         }
 
-        #header-links {
-            margin: 0;
-            padding: 0;
-        }
-
-        #header-links li {
-            margin: 20px 0 0 0;
+        #my-header a {
+            margin-top: 15px;
             font-size: 22px;
-            list-style-type: none;
-            padding: 0 30px 0 30px;
-        }
-
-        #header-links li a {
+            text-align: center;
             text-decoration: none;
             color: #FFFFFF;
         }
 
+        #my-header a:hover {
+            background-color: #004E8D;
+            border-radius: 24px;
+        }
+
         #header-search {
-            margin: 15px 0 0 0;
+            width:22%;
             padding: 5px 5px 5px 5px;
             transition: width 0.4s ease-in-out;
+            float: right;
                 background-image: url('../img/searchicon.png');
                 background-size: 30px 30px;
                 background-position: right center; 
                 background-repeat: no-repeat;
                 border: 2px solid #ccc;
                 border-radius: 4px;
+                    position: absolute;
+                    right: 10px;
+                    top: 30px;
             }
 
 /* Contact bar */
@@ -101,7 +101,7 @@
                     right: -1px;
                 }
 
-                    .fa {
+                    #social-bar .fa {
                         height: 30px;
                         width: 30px;
                         padding: 7px;
@@ -114,7 +114,8 @@
                             top: 12px;
                     }
                     
-                    .fa:hover {
+ /* глобально для иконок */                    
+                   .fa:hover {
                         opacity: 0.7;
                     }
                     
@@ -167,37 +168,71 @@
 
         #section-1 {
             background-image: url('../img/responsive.png');
-            background-size: contain;
-            background-repeat: repeat left;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+                border-radius: 24px;
+                border: 0;
         }
 
         #section-1 {
             min-height: 400px;
-            background-color: #7CA17C;
+            background-color: #FFFFFF;
         }
 
-        /* Section 2  - my-tools*/
+/* Section 2  - my-tools*/
         #section-2 {
-            background-color: #FFFFFF;
+            background-color: #0063B1;
         }
 
         .my-boxes {
             padding: 50px;
+            color: white;
             text-align: center;
-            border: 1px solid #0063B1;
+                background-color: #004E8D;
+                border: 1px solid #0063B1;
+                border-radius: 24px;
+                min-height: 70px;
+                z-index: 1;
+
+        }
+
+        .my-boxes * {
+            display: list-item;
+            list-style: none;
+            line-height: 1.2;
+        }
+
+        #section-2 i {
+            color: white;
+            font-size: 50px;
         }
 
 /* Section 3 - contacts*/
 
         #section-3 {
             min-height: 200px;
-            background-color: #CB8686;
+            background-color: #FFFFFF;
+            border-radius: 24px;
         }
 
-        .info-links {
-            margin: 0 0 0 20px;
-            width: 30%;
-            float: left;
+        .info-links ul li{
+            margin: 5px 0 0 25%;
+            list-style: none;
+        }
+
+        .info-links ul li:not(:first-child) {
+            width: 50px;
+        }
+
+        .info-links ul li:first-child{
+            text-transform: uppercase;
+        }
+
+        .info-links ul li:hover:not(:first-child){
+            color: #FFFFFF;
+            background-color: #004E8D;
+            border: 1px solid #0063B1;
+            border-radius: 24px;
         }
 
 /* Footer */
@@ -224,3 +259,91 @@
             background-repeat: no-repeat;
         border: 2px solid #ccc;
         border-radius: 4px; */
+
+
+        
+/* 
+
+#social-bar {
+    position: fixed;
+    right: 0;
+}
+
+        #social-bar div {
+            position: fixed;
+            right: -85px;
+            transition: 0.3s;
+            width: 120px;
+                border-radius: 5px 0 0 5px;
+                padding: 15px 15px 15px 5px;
+        }
+
+        #social-bar div>a {
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            position: relative;
+        }
+
+        #social-bar div:hover {
+            right: -1px;
+        }
+
+        #social-el-1 {
+            top: 80px;
+                background-color: #BDC7F1;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+        }
+        #social-el-2 {
+            top: 150px;
+                background-color: #BDC7F1;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+        }
+        #social-el-3 {
+            top: 196px;
+                background-color: #BDC7F1;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+        }
+        #social-el-4 {
+            top: 254px;
+                background-color: #BDC7F1;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+        }
+
+            .fa {
+                height: 30px;
+                width: 30px;
+                padding: 7px;
+                font-size: 15px;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 50%;
+            }
+            
+            .fa:hover {
+                opacity: 0.7;
+            }
+            
+                    .fa-facebook {
+                        background: #3B5998;
+                        color: white;
+                    }
+
+                    .fa-google {
+                        background: #dd4b39;
+                        color: white;
+                    }
+                    
+                    .fa-skype {
+                        background: #00aff0;
+                        color: white;
+                    }
+                    
+                    .fa-vimeo {
+                        background: #984888;
+                        color: white;
+                    } */
